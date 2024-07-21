@@ -9,7 +9,7 @@ agent any
                      }
             stage ('Build') {
                    steps {
-                   bat "php index.php"
+                  echo "Test build"
                          }
                            }    
        stage ('Test') {
