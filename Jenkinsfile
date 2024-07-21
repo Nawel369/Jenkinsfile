@@ -12,6 +12,12 @@ agent any
                    echo "Build Phase"
                          }
                            }    
+       stage ('Test') {
+                 steps {
+                 echo "Test Phase"
+                      }
+                      }
+    
                 }
           }
 
