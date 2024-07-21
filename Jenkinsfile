@@ -22,7 +22,12 @@ agent any
 
          stage ('Deploy') {
               steps {
-              echo "Build Phase"
+              //Stimuler le déploiement en copiant les fichiers vers un répertoire de déploiement
+                script { def deployDir="C:\\Users\\lenovo\\Desktop\\pipeline"
+                        //bat "mkdir ${deployDir}" 
+                        bat "copy index.php ${deployDir}\\"
+                        echo "Déploiement réussi dans ${deployDir}"
+                    }
                     }
                     }
                 }
