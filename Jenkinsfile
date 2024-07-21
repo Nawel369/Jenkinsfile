@@ -12,12 +12,12 @@ agent any
                  bat "php index.php"
                          }
                            }    
-       stage ('Test') {
+           stage ('Test') {
                  steps {
-                 echo "Test Phase"
+                 bat "php test.php"
                       }
                       }
-       stage ('Deploy') {
+           stage ('Deploy') {
                 steps {
                 echo "Build Phase"
                       }
