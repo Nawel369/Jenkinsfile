@@ -38,7 +38,7 @@ agent any
         success {
           echo 'This runs on success'
                 }
-        faillure {
+        failure {
           echo 'This runs is failure'
                 }
             }
