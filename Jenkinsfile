@@ -30,6 +30,19 @@ agent any
                     }
                     }
                     }
+
+      post {
+        always {
+          echo 'This runs always'
+               }
+        success {
+          echo 'This runs on success'
+                }
+        faillure {
+          echo 'This runs is failure'
+                }
+            }
+        
                 }
           }
 
