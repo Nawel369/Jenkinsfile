@@ -9,7 +9,7 @@ agent any
                      }
             stage ('Build') {
                    steps {
-                   echo "Build Phase"
+                   bat "php index.php"
                          }
                            }    
        stage ('Test') {
@@ -17,7 +17,11 @@ agent any
                  echo "Test Phase"
                       }
                       }
-    
+       stage ('Deploy') {
+                steps {
+                echo "Build Phase"
+                      }
+                       }
                 }
           }
 
