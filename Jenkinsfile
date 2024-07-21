@@ -12,6 +12,7 @@ agent any
                  bat "php index.php"
                          }
                            }   
+
     
            stage ('Test') {
                  steps {
