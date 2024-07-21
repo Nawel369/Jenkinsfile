@@ -7,6 +7,11 @@ agent any
                        }
       
                      }
+            stage ('Build') {
+                   steps {
+                   echo "Build Phase"
+                         }
+                           }    
                 }
           }
 
