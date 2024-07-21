@@ -19,7 +19,12 @@ agent any
                  bat "php test.php"
                       }
                       }
-          
+
+         stage ('Deploy') {
+              steps {
+              echo "Build Phase"
+                    }
+                    }
                 }
           }
 
